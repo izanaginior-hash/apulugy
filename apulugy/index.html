@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    min-height:100vh;
+    background:linear-gradient(-45deg,#ff9a9e,#fad0c4,#fbc2eb,#a6c1ee);
+    background-size:400% 400%;
+    animation:gradientMove 12s ease infinite;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    overflow-x:hidden;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.container{
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+    width:100%;
+    max-width:750px;
+    padding:35px;
+    border-radius:30px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.2);
+    text-align:center;
+    animation:fadeIn 1.5s ease;
+}
+
+h1{
+    color:#ff4d6d;
+    margin-bottom:20px;
+    font-size:clamp(26px,5vw,34px);
+}
+
+.message{
+    min-height:150px;
+    line-height:1.7;
+    color:#444;
+    margin-bottom:25px;
+    font-size:clamp(14px,2.5vw,16px);
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+button{
+    padding:12px 22px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s ease;
+}
+
+.yesBtn{
+    background:#ff4d6d;
+    color:white;
+}
+
+.yesBtn:hover{
+    transform:scale(1.1);
+    background:#e63950;
+}
+
+.noBtn{
+    background:#ddd;
+}
+
+.noBtn:hover{
+    background:#ccc;
+}
+
+.finalMessage{
+    margin-top:25px;
+    opacity:0;
+    transition:0.8s ease;
+    color:#ff4d6d;
+    font-weight:bold;
+}
+
+.show{
+    opacity:1;
+}
+
+.musicBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:white;
+    border-radius:50%;
+    width:55px;
+    height:55px;
+    font-size:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.heart{
+    position:fixed;
+    bottom:-10px;
+    font-size:20px;
+    animation:floatUp 6s linear infinite;
+    opacity:0.6;
+}
+
+@keyframes floatUp{
+    0%{transform:translateY(0) scale(1);opacity:0.7;}
+    100%{transform:translateY(-110vh) scale(1.6);opacity:0;}
+}
+
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(20px);}
+    to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>I'm Sorry, My Love ❤️</h1>
+
+    <div class="message" id="typewriter"></div>
+
+    <div class="buttons">
+        <button class="yesBtn" onclick="forgive()">I Forgive You ❤️</button>
+        <button class="noBtn" onmouseover="moveNo(this)">Still Thinking 🤔</button>
+    </div>
+
+    <div class="finalMessage" id="finalText">
+       Thank you for being patient with me. I love you more than words can say. And also thanks for making me grow. for being there when I need you and for telling me important things. 
+        I LOVE YOU, I can't express it well but yes, I do love you so much. I hope we can grow and learn together parin. I want to grow with you and be my wife in the future. Thank you for always believing in me.
+        Thank you for nonstop compliments, pasensya kana kung di ako sanay tumanggap ng compliments. Pero kinikilig talaga ako pag sinasabi mong ang pogi ko and I don't know how to react on it. I love you Mary Rose P. Cuacoy,
+        my future Mary Rose C. Delos Santos. Muahhhhh ❤️
+    </div>
+</div>
+
+<button class="musicBtn" onclick="toggleMusic()">🎵</button>
+
+<audio id="bgMusic" loop preload="auto">
+    <source src="Kalapastangan.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+// ===== TYPEWRITER =====
+const text = `Love, I'm really sorry for making it hard for you. I just to tell you what I think pero mali pag kaka express ko and I'm blinded by it. Nasaktan ako nung sinabi mong habol ko lang sayo is u know,
+       which is hindi naman because I know na di naman yon naging reason bat kita minahal. And I failed you that I made you think like that dahil sa gulo ng isipan ko and kaka overthink. It made me ask myself,
+       that do I really lust for you? I'll be honest, since we did it, naging part sa akin na may konting lust. But it also made me realize na normal lang yon. Because we really love each other and it happened
+       in a moment na di natin ineexpect, but we both accept it. And now we"re facing the consequences. But that's not all, I didn't love you because of it. Naging small part lang yon and there is something more about it
+       na mas mahalaga. I asked myself if I really love you. I remember how we first met na sobrang happy ako. Nung nakita kita, diko mapigilang hindi ngumiti. Nahihiya pako non kasi conscious ako sa mukha ko and buhok. 
+       and I didn't really expect na imemeet moko that time. I started to get interested with you after that. Nung nameet ko fam mo, I was genuinely happy, for real like naging comfy ako agad sa bahay nyo. And second na balik ko and 3rd,
+       don kona mas lalong narealize na gusto kita. I'm falling inlove with you little by little. I'm getting to know you much more. I love it when you think of more practical things rather than serious effort like bibigyan ka ng bongga,
+       but you chose to save more money rather spend too much. And even na small things naappreciate mo, like everything na binibigay ko sayo, naappreciate mo. And I love you for that traits. Every time na mag kita tayo it feels really excited,
+       and laging enjoy to the point na nakakalimutan natin mag picture. I love everything about you. Sobrang understanding mo, sa lahat ng naka interact ko ikaw lang din nakakakuha ng humor ko. lalo akong nainlove sayo dahil don. 
+       You showed me something na diko pa naexperience, and thankful ako for that. And you're beauty sometimes amaze me to the point natutulala ako and I love seeing you smile. Your eyes is beautiful and I can see its filled with love,
+       and the way you look at me is very mesmerizing and attracting. I also love your nose its so tangos and pretty. You really look gorgeous. I also like your body, its very fit and perfect. I love every part of you. I love you so much.
+
+        Love, I'll always choose you because you are the woman I love. and I love you because you are the woman I chose. It's a decision and choice I made long time ago before we even realize. And you know, I remember something. Why Am I overreacting,
+       if we can do it again, after marriage. It made me think na, mag papakasal naman tayo. Like mag wawait naman ako so whats the rush? why do I rush things? Then I felt relieve because i feel na bumalik ako sa path ko. It made me realize,
+       that why would I need to overthink about that eh ikaw naman pinili ko til end. Now it makes thing clearer. I'm blinded by the thought of it and forgot my true intentions. Nabulag ako sa temporary plans sa mga buhay and nakalimutan ko tunay kong
+       purpose on why I chose you and I'm really sorry love that I let myself be blinded by those thoughts. I love you, please forgive me.`;
+
+let i=0;
+function typeWriter(){
+    if(i<text.length){
+        document.getElementById("typewriter").innerHTML += 
+        text.charAt(i)==="\n" ? "<br><br>" : text.charAt(i);
+        i++;
+        setTimeout(typeWriter,28);
+    }
+}
+typeWriter();
+
+// ===== FORGIVE =====
+function forgive(){
+    document.getElementById("finalText").classList.add("show");
+    launchConfetti();
+    smoothPlayMusic();
+}
+
+// ===== MOVING BUTTON (MOBILE SAFE) =====
+function moveNo(btn){
+    const maxX = window.innerWidth - btn.offsetWidth - 20;
+    const maxY = window.innerHeight - btn.offsetHeight - 20;
+
+    btn.style.position="fixed";
+    btn.style.left=Math.random()*maxX+"px";
+    btn.style.top=Math.random()*maxY+"px";
+}
+
+// ===== MUSIC SYSTEM =====
+const music=document.getElementById("bgMusic");
+const musicBtn=document.querySelector(".musicBtn");
+
+music.volume=0.2;
+
+function toggleMusic(){
+    if(music.paused){
+        smoothPlayMusic();
+    }else{
+        music.pause();
+        musicBtn.innerHTML="🎵";
+    }
+}
+
+function smoothPlayMusic(){
+    music.play();
+    musicBtn.innerHTML="⏸";
+    music.volume=0;
+    let vol=0;
+    const fade=setInterval(()=>{
+        if(vol<0.4){
+            vol+=0.02;
+            music.volume=vol;
+        }else{
+            clearInterval(fade);
+        }
+    },200);
+}
+
+// Auto start after first interaction
+document.body.addEventListener("click",function init(){
+    if(music.paused){
+        smoothPlayMusic();
+    }
+    document.body.removeEventListener("click",init);
+});
+
+// ===== HEARTS =====
+function createHeart(){
+    const heart=document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML="❤️";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(Math.random()*20+15)+"px";
+    document.body.appendChild(heart);
+    setTimeout(()=>heart.remove(),6000);
+}
+setInterval(createHeart,800);
+
+// ===== CONFETTI =====
+function launchConfetti(){
+    for(let i=0;i<100;i++){
+        const confetti=document.createElement("div");
+        confetti.style.position="fixed";
+        confetti.style.width="8px";
+        confetti.style.height="8px";
+        confetti.style.borderRadius="50%";
+        confetti.style.background=`hsl(${Math.random()*360},100%,50%)`;
+        confetti.style.left=Math.random()*100+"vw";
+        confetti.style.top="-10px";
+        confetti.style.transition="transform 3s ease-out, opacity 3s";
+        document.body.appendChild(confetti);
+
+        setTimeout(()=>{
+            confetti.style.transform="translateY(100vh)";
+            confetti.style.opacity=0;
+        },10);
+
+        setTimeout(()=>confetti.remove(),3000);
+    }
+}
+
+</script>
+
+</body>
+</html>
