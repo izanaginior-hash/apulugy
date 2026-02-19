@@ -211,7 +211,11 @@ function moveNo(btn){
 }
 
 // ===== MUSIC SYSTEM =====
-const music=document.getElementById("bgMusic");
+const music = document.getElementById("bgMusic");
+
+window.addEventListener("click", () => {
+    music.play();
+});
 const musicBtn=document.querySelector(".musicBtn");
 
 music.volume=0.2;
@@ -287,4 +291,5 @@ function launchConfetti(){
 
 </body>
 </html>
+
 
